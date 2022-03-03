@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Conversor</title>
+</head>
+<body>
+	<main id="main">
+		<h1>Conversor de moedas para Real</h1>
+			
+		<!-- OPÇÕES DE CONVERÇÃO-->
+		<div id="lista">
+			<b><label id="text1">Converter para: </label></b><br/>
+			<select id="opções">
+				<option>---</option>
+				<option value="DólarEUA">Dólar Americano</option>
+				<option value="DólarCAN">Dólar Canadense</option>
+				<option value="DólarAUS">Dólar Australiano</option>
+				<option value="Euro">Euro</option>
+				<option value="Libra">Libra</option>
+				<option value="iene">Iene</option>
+				<option value="PesoARG">Peso Argentino</option>
+				<option value="PesoCHI">Peso Chileno</option>
+				<option value="PesoURU">Peso Uruguaio</option>
+				<option value="Bit">Bitcoin</option>						
+			</select><br/>
+		</div>
+			
+		<!-- VALOR A SER CONVERTIDO -->
+		<div id="div1">
+			<b><label>Valor a ser convertido:</label></b><br />		
+			<input type="text" id="text2" />
+		</div>
+			
+		<!-- BOTÕES DE CONVERTER E LIMPAR-->
+		<input type="button" value="Converter" id="btnConverter" onClick="conversao()" />
+		<input type="reset" value="Limpar" id="btnLimpar">
+			
+		<!-- RESULTADO DA CONVERSÃO -->
+		<div id="div2">
+			<label id="resultado">Resultado:</label><br />
+			<span id="valorFinal"></span>
+		</div><br />
+			
+		<!-- CONSIDERAÇÕES FINAIS -->
+		<div id="div3">
+			<ul>
+        	    <li>Desenvolvido por "Gustavo Gomes"</li>		
+				<li>Data da cotação: 02/03/2022</li>
+			</ul>
+		</div>
+	</main>	
+    
+</body>
+</html>
